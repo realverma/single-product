@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single E-commerce Product Page using HTML, CSS - Codingscape</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="single-product">
+        <div class="row">
+          <div class="col-6">
+            <div class="product-image">
+              <div class="product-image-main">
+                <img src="" alt="" id="product-main-image" />
+              </div>
+              <div class="product-image-slider" id="product-image-slider"></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="product">
+              <p class="company">Marmeto</p>
+              <div class="product-title">
+                <h2 id="product-name">Loading...</h2>
+              </div>
+
+              <div class="product-price" id="product-price"></div>
+
+              <div class="product-color" id="product-color"></div>
+
+              <div class="product-size" id="product-size"></div>
+
+              <div class="product-btn-group">
+                <div class="counter button add-cart">
+                  <span class="" onclick="decreaseCount(event, this)">-</span>
+                  <input type="" value="1" id="quantity" />
+                  <span class="" onclick="increaseCount(event, this)">+</span>
+                </div>
+                <div class="button add-cart" id="add-to-cart">
+                  <i class="bx bxs-cart"></i> Add to Cart
+                </div>
+              </div>
+              <div id="add-to-cart-message" style="display: none"></div>
+
+              <span class="divider"></span>
+              <div class="product-details" id="product-details"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
